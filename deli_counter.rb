@@ -28,3 +28,7 @@ def now_serving(deli)
     puts "Currently serving #{deli.shift}."
   end
 end
+
+def take_a_number(deli)
+  have_been
+end
