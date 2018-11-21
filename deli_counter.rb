@@ -33,8 +33,7 @@ def take_a_number(deli)
   if deli.empty?
     ticket_number = 1
   else
-    deli.last + 1
-    
+    ticket_number = deli.last + 1
   end
   
   deli.push(ticket_number)
