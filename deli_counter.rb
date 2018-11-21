@@ -33,7 +33,8 @@ def take_a_number(deli)
   if deli.empty?
     new_cust = 1
   else
-    puts "Welcome, #{deli.last + 1}. You are  "
+    deli.last + 1
+    
   end
   
   deli.push(new_cust)
