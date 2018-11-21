@@ -35,11 +35,10 @@ def take_a_number(deli)
   else
     deli.last + 1
     
-    
   end
   
-  deli.push(new_cust)
-  puts "Welcome, #{new_cust}. You are number #{deli.count} in line."
+  deli.push(ticket_number)
+  puts "Welcome, #{ticket_number}. You are number #{deli.count} in line."
 end
 
 new_deli = []
