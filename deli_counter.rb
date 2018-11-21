@@ -32,10 +32,12 @@ end
 def take_a_number(deli)
   if deli.empty?
     new_cust = 1
-    deli.push(new_cust)
-    puts "Welcome, #{new_cust}. You are number #{deli.count} in line."
   else
     puts "Welcome, #{new_cust.last + 1}."
+  end
+  
+  deli.push(new_cust)
+  puts "Welcome, #{new_cust}. You are number #{deli.count} in line."
 end
 
 new_deli = []
