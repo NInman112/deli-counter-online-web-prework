@@ -31,9 +31,10 @@ end
 
 def take_a_number(deli)
   if deli.empty?
-    new_cust = 1
+    ticket_number = 1
   else
     deli.last + 1
+    
     
   end
   
