@@ -30,5 +30,21 @@ def now_serving(deli)
 end
 
 def take_a_number(deli)
-  have_been
+  
 end
+
+new_deli = []
+take_a_number(new_deli) #=> "Welcome, 1. You are number 1 in line."
+take_a_number(new_deli) #=> "Welcome, 2. You are number 2 in line."
+now_serving(new_deli) #=> "Currently serving 1." new_deli => [2]
+
+take_a_number(new_deli) #=> "Welcome, 3. You are number 2 in line." new_deli=> [2,3]
+now_serving(new_deli) #=> "Currently serving 2."
+now_serving(new_deli) #=> "Currently serving 3."
+
+take_a_number(new_deli) #=> "Welcome, 1. You are number 1 in line." new_deli => [1]
+take_a_number(new_deli) #=> "Welcome, 2. You are number 2 in line."
+take_a_number(new_deli) #=> "Welcome, 3. You are number 3 in line."
+now_serving(new_deli) #=> "Currently serving 1." new_deli => [2,3]
+
+
